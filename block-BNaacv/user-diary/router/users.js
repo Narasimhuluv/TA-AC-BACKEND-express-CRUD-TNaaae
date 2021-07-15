@@ -1,7 +1,7 @@
 let express = require('express')
 let router = express.Router();
 
-router.get('/', (req,res) => {
+router.get('/users', (req,res) => {
     let list = ['Narasimhulu', 'Chinna', 'Sai' , 'Dinesh']
     res.render('users.ejs',{list : list})
 })
