@@ -11,4 +11,13 @@ router.get("/studentsDetails", (req,res) => {
     res.render('studentDetails.ejs',{student : student})
 })
 
+router.get('/studentsForm', (req,res) => {
+    res.render('studentForm.ejs')
+})
+
+router.post('/studentsForm', (req,res) => {
+    console.log(req.body)
+    res.send(req.body)
+})
+
 module.exports = router
