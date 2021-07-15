@@ -22,8 +22,7 @@ app.set("view engine", "views")
 app.set('views', __dirname + '/views')
 
 // Routers
-app.use('/', require('./router/index'))
-app.use('/students', require('./router/routers'))
+app.use('/', require('./router/students'))
 
 // error handler middlewares
 
