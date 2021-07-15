@@ -6,7 +6,7 @@ router.get('/students/new', (req,res) => {
     res.render("students.ejs",{list : students})
 })
 
-router.get("/studentsDetails", (req,res) => {
+router.get("/studentsDetails/:id", (req,res) => {
     let student = { name: "rahul", email: "rahul@altcampus.io" }
     res.render('studentDetails.ejs',{student : student})
 })
