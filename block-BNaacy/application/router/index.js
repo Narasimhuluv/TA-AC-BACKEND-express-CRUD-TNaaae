@@ -1,20 +1,20 @@
 let express = require('express');
 let router = express.Router();
-let User = require('../models/user')
+let User = require('../models/User');
 
-router.get('/', (req,res) => {
-    res.render('userForm')
-})
 
 router.get('/new', (req,res) => {
-    res.render('userForm')
+    res.render('userForm.ejs')
 })
-router.post('/new', (req,res) => {
-    console.log(req.body)
+
+router.post('/', (req,res) => {
+    // console.log(req.body)
     User.create(req.body, (err,user) => {
         console.log(err,user)
+        res.send(user)
     })
 })
+
 
 
 module.exports = router;
