@@ -23,7 +23,7 @@ router.get('/', (req,res) => {
     })
 })
 
-router.get('/users/:id', (req,res) => {
+router.get('/:id', (req,res) => {
     let id = req.params.id;
     User.findById(id,(err,user) => {
         if(err) return res.send(err);
