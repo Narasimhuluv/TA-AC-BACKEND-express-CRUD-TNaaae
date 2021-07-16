@@ -11,6 +11,7 @@ router.post('/', (req,res) => {
     // console.log(req.body)
     User.create(req.body, (err,user) => {
         console.log(err,user)
+        if(err) return res.send(err);
         res.send(user)
     })
 })
