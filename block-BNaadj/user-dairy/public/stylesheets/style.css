@@ -1,0 +1,26 @@
+form{
+    width: 25%;
+    border: 1px solid grey;
+    margin: 30px auto;
+    padding: 2rem;
+    background-color: white;
+    border: -1px -1px 5px rgba(255, 255, 255, 0.55),
+            3px 3px 5px rgba(0,0,0,0.5);
+}
+h2{
+    margin-top: 100px;
+    text-align: center;
+    text-transform: uppercase;
+}
+input{
+    width: 100%;
+    height: 2rem;
+    margin-top: 2rem;
+    padding: 0.3rem;
+}
+
+.eachData{
+    width: 30%;
+    border: 1px solid green;
+    padding: 2rem;
+}
