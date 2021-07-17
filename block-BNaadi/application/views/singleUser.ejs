@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="each">
+            <h2><%= users.name %></h2>
+            <h2><%= users.age %></h2>
+            <h2><%= users.email %></h2>
+            <textarea><%= users.bio %></textarea>
+            <a href="/userdairy/<%= users.id%>/edit">
+                <button>update user</button>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
