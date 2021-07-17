@@ -1,0 +1,7 @@
+.each{
+    border: 1px solid grey;
+    margin: 2rem 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(128, 184, 206, 0.671);
+}
